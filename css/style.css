@@ -87,6 +87,7 @@ h6 {
   --bd-white-color: #ffffff;
   --bg-orange-color: #fd9222;
   --txt-black: #111111;
+  --txt-orange: #fd9222;
 }
 
 body {
@@ -124,8 +125,66 @@ body {
 /*--------------------------------------*/
 /*--------------------------------------*/
 .header {
-  background-color: aqua;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   height: 80px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-style: 18px;
+  line-height: 20px;
+  color: var(--txt-black);
+}
+.logo span {
+  font-style: italic;
+  margin-right: 4px;
+}
+.logo img {
+  margin-left: 4px;
+}
+.header__navigation {
+}
+.navigation {
+  display: flex;
+  font-weight: 500;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 24px;
+}
+.navigation__item:last-child {
+  margin-right: 90px;
+}
+.navigation__link {
+  color: var(--txt-black);
+}
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: var(--txt-orange);
+}
+.navigation__socials {
+  display: flex;
+}
+.socials {
+}
+.socials__item:not(:last-child) {
+  margin-right: 18px;
+}
+.socials__link {
 }
 /*--------------------------------------*/
 /*--------------------------------------*/
