@@ -456,7 +456,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .hero__left {
     display: flex;
     flex-direction: column;
@@ -540,26 +540,83 @@ body {
   letter-spacing: 2%;
   opacity: 70%;
 }
+
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*benefits style end*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
 /*benefits media start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 685px) {
+  .benefits {
+    padding-bottom: 0px;
+  }
+  .benefits__item::after {
+    position: absolute;
+    content: "";
+    display: none;
+  }
+  .benefits__txt {
+    position: relative;
+  }
+  .benefits__txt::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 224px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: -10px;
+    left: 0;
+  }
+  .benefits__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefits__item {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 50px;
+  }
+  .benefits__pic {
+    margin-right: 30px;
+  }
+  .benefits__img {
+    width: 62px;
+  }
+  .benefits__item:not(:last-child) {
+    margin: 0;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
+  .benefits__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
 }
+
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
+/*benefits media end*/
+/*іngridients style start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
 .іngridients {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -622,22 +679,54 @@ body {
 .іngridients__subtitle-b {
   color: var(--txt-black);
 }
+
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*іngridients style end*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
 /*іngridients media start*/
-@media screen and (max-width: 768px) {
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .іngridients__item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .іngridients__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
 }
 @media screen and (max-width: 685px) {
+  .іngridients__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
+  .іngridients__txt {
+    margin-bottom: 30px;
+  }
+  .іngridients {
+    padding-top: 60px;
+  }
 }
 @media screen and (max-width: 375px) {
+  .іngridients {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
 }
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*іngridients media end*/
+/*how style start*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
@@ -658,7 +747,7 @@ body {
   justify-content: space-between;
 }
 .how__pic {
-  height: 400px;
+  max-width: 600px;
   border-radius: 15px;
   margin-right: 20px;
 }
@@ -690,19 +779,36 @@ body {
   left: -3px;
   top: 6px;
 }
+
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*how style end*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
 /*how media start*/
-@media screen and (max-width: 768px) {
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .how__wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .how__pic {
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 685px) {
+  .how__pic {
+    width: 100%;
+    border-radius: 15px;
+  }
 }
 @media screen and (max-width: 375px) {
 }
