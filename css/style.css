@@ -288,9 +288,8 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 40px;
+  margin: 0 auto;
 
-  margin-left: 32px;
-  margin-right: 32px;
   max-width: 1140px;
   height: 550px;
 
@@ -298,6 +297,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px;
 }
 .hero__container {
@@ -386,10 +387,12 @@ body {
 /*--------------------------------------*/
 /*--------------------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .hero {
     border-radius: 30px;
     align-items: end;
+    margin-left: 32px;
+    margin-right: 32px;
   }
   .hero__title {
     font-size: 28px;
@@ -731,6 +734,7 @@ body {
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
+
 .how {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -755,6 +759,7 @@ body {
   padding: 30px;
   border-radius: 15px;
   background-color: var(--bd-white-color);
+  max-width: 600px;
 }
 .how__subtitle {
   padding-bottom: 28px;
@@ -811,11 +816,26 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .how__title {
+    margin-bottom: 20px;
+  }
+  .how {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
 }
+
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
+/*how media end*/
+/*reviews style start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
 .reviews {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -868,6 +888,13 @@ body {
   border-radius: 25px;
   border: var(--bg-orange-color) 1px solid;
   background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+.reviews__btn:hover,
+.reviews__btn:focus,
+.reviews__btn:active {
+  background-color: var(--bg-orange-color);
+  color: var(--txt-white);
 }
 
 /*--------------------------------------*/
@@ -875,26 +902,30 @@ body {
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*reviews style end*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
 /*reviews media start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 685px) {
 }
 @media screen and (max-width: 375px) {
 }
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
-/*--------------------------------------*/
 
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
+/*reviews media end*/
+/*footer stile start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
 .footer {
   background-color: var(--bg-violet-color);
   height: 298px;
@@ -955,6 +986,12 @@ body {
 }
 .adress__link {
   color: var(--txt-white);
+  transition: all 0.3s ease 0s;
+}
+.adress__link:hover,
+.adress__link:active,
+.adress__link:focus {
+  color: var(--txt-orange);
 }
 .footer__nav {
 }
@@ -970,8 +1007,14 @@ body {
   line-height: 18px;
   font-style: normal;
   color: var(--txt-white);
-}
 
+  transition: all 0.3s ease 0s;
+}
+.nav__link:hover,
+.nav__link:active,
+.nav__link:focus {
+  color: var(--txt-orange);
+}
 .footer__wrapper {
 }
 .footer__input {
@@ -983,6 +1026,13 @@ body {
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
   margin-right: 8px;
+
+  transition: all 0.3s ease 0s;
+}
+.footer__input:hover,
+.footer__input:active,
+.footer__input:focus {
+  border: 1.5px solid rgba(255, 255, 255, 0.322);
 }
 .footer__input::placeholder {
   color: rgba(255, 255, 255, 0.15);
@@ -995,10 +1045,78 @@ body {
   border-radius: 25px;
 
   background-color: var(--bg-orange-color);
+  transition: all 0.3s ease 0s;
 }
-@media screen and (max-width: 768px) {
+.footer__btn:hover,
+.footer__btn:active,
+.footer__btn:focus {
+  background-color: var(--bg-darck-orange);
+}
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*footer style end*/
+/*footer media start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+@media screen and (max-width: 830px) {
+  .footer__first {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__title {
+    margin-bottom: 30px;
+  }
+  .footer__second {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__adress {
+    margin-bottom: 50px;
+  }
+  .footer__nav {
+    margin-bottom: 20px;
+  }
+  .footer {
+    background-color: var(--bg-violet-color);
+    height: 378px;
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 685px) {
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
+  .footer {
+    background-color: var(--bg-violet-color);
+    height: 520px;
+    padding-top: 30px;
+  }
+  .footer__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__btn {
+    width: 100%;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*footer media end*/
+/* style start*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
