@@ -229,7 +229,9 @@ body {
 }
 .socials__link {
 }
-
+.navigation__burger {
+  display: none;
+}
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
@@ -261,6 +263,9 @@ body {
   }
   .header__navigation {
     display: none;
+  }
+  .navigation__burger {
+    display: block;
   }
 }
 @media screen and (max-width: 375px) {
